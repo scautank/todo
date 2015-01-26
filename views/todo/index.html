@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>todo list</title>
+		<link type="text/css" rel="stylesheet" href="/public/stylesheets/todo.css" />
+		<!-- template -->
+		<script id="todo-tpl" type="text/html">
+			<li>
+				<section data-bind="visible:!ctrlBtn()">
+					<span data-bind="text: title, event: { dblclick: doubleClickHandler }"></span>
+					<a href="javascript:;" title="删除" data-bind="click: remove">×</a>
+				</section>
+				<section data-bind="visible:ctrlBtn()">
+					<input class="title-input" type="text" data-bind="value: title, event: { keyup: keyUpEdit }, hasFocus: ctrlBtn()" />
+					<a href="javascript:;" title="保存" data-bind="click: edit">√</a>
+				</section>
+			</li>
+		</script>
+	<body>
+		<h1>todo</h1>
+		<div class="wrap">
+			<!-- todo content input -->
+			<input id="todo-input" type="text" data-bind="value: title, event: { keyup: add }" placeholder="What needs to be done?" />
+			<!-- todo list -->
+			<ol data-bind="template: { name: 'todo-tpl', foreach: list }">
+				
+			</ol>
+		</div>
+		<script type="text/javascript" src="/public/javascripts/lib/require.js" data-main="/public/javascripts/todo.js"></script>
+	</body>
+
+</html> 
