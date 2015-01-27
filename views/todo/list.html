@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>todo list</title>
+		<link type="text/css" rel="stylesheet" href="/public/stylesheets/todo.css" />
+	<body>
+		<h1>todo</h1>
+		<div class="wrap">
+			<ol>
+				<% for(var i = 0; i < list.length; i++){ %>
+				<li>
+					<%= list[i].title %>
+				</li>
+				<% } %>
+			</ol>
+		</div>
+	</body>
+
+</html> 

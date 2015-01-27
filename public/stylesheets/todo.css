@@ -1,0 +1,13 @@
+html,body,ol,input,h1 { margin:0; padding:0; }
+li { list-style: none; }
+body { background:#eaeaea; font-family:"microsoft yahei"; }
+a { text-decoration: none; }
+
+h1 { height:120px; line-height:120px; font-size:70px; font-weight:bold; text-align:center; color:rgba(255, 255, 255, 0.3); text-shadow:-1px -1px rgba(0, 0, 0, 0.2); }
+.wrap { width: 500px; margin:0 auto; border: 1px solid #ccc; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.15); }
+.wrap input { width: 400px; font-size: 24px; border:none; padding: 15px; background:#d9d9d9; }
+#todo-input { width: 470px; }
+.wrap ol { width: 470px; font-size: 24px; border:none;}
+.wrap li { width: 480px; line-height: 40px; border-bottom: 1px dotted #000; padding: 10px; position: relative; }
+.wrap ol a { font-size: 20px; font-weight: bold; color: #a88a8a; position: absolute; top: 10px; right: 10px; }
+.wrap ol a:hover { font-size: 22px; };
